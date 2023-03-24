@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <title>Basit Görev Uygulaması</title>
+</head>
+
+<body>
+    <div id="testsonucu">
+        <h2>TEST BAŞARI ILE TAMAMLANDI</h2>
+    </div>
+
+    <h1 id="baslik" onclick="yoket()">Basit Görev Oyununa Hoşgeldiniz </h1>
+
+
+
+    <div class="gorev" id="gorev1">
+        <p>1. GÖREV</p>
+        <button ondblclick="ciftTikla()">Çift Tıklayınız</button> <br><br>
+    </div>
+
+    <div class="gorev" id="gorev2">
+        <p id="gorev2">2. GÖREV</p>
+        <button id="btn2" oncontextmenu="tersTikla()">Ters Tıklayınız</button> <br><br>
+    </div>
+
+    <div class="hesap" id="gorev3">
+        <p id="gorev3">3. GÖREV</p>
+        <h5>Toplama İşlemi Yaparak 1250 sonucunu bulunuz.</h5>
+        <input type="number" placeholder="1.sayiyi giriniz" id="sayi1">
+        <input type="number" placeholder="2.sayiyi giriniz" id="sayi2">
+        <p id="sonucubul"></p>
+        <button onclick="hesapla()">Hesapla</button> <br><br>
+        <div id="result"></div>
+    </div>
+
+
+    <div id="gorev4" class="resim">
+        <p id="gorev4" style="text-align: center;">4. GÖREV</p>
+        <img src="/farkresimleri.png" alt="" onclick="resimfark(event)"> <br><br>
+        <div class="aciklama">2 resim arasındaki 4 farkı bulunuz</div>
+        <div id="resimsonuc"></div>
+        <div id="cicek">1.FARK = </div>
+        <div id="igne">2. FARK =</div>
+        <div id="kus">3. FARK = </div>
+        <div id="ayak">4. FARK = </div>
+
+        <button onclick="gonder()" style="margin-top: 10px">SONUCU GONDER</button>
+    </div>
+
+    <div id="gorev5">
+        <p id="gorev4" style="text-align: center;">5. GÖREV</p>
+        <h4>100 adet Tuşa basınız</h4>
+        <div class="tuslar">
+            <input type="text" placeholder="Tuşlayınız" onkeypress="tus()">
+            <div id="tusonuc" style="margin-top: 20px;"></div>
+        </div>
+    </div>
+
+    <div id="songorev">
+        <p id="gorevson" style="text-align: center;">SON GÖREV !</p>
+        <h4>"End" Karakterini Tuşlayınız</h4>
+        <input type="text" placeholder="Tuşlayınız" onkeydown="progress()"> <br><br>
+        <div id="sonsonuc"></div>
+    </div>
+
+
+
+    <script src="/script.js"></script>
+</body>
+
+</html>
